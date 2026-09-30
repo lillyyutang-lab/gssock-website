@@ -84,6 +84,7 @@ section[id]{scroll-margin-top:90px}
 .product-end{text-align:center;padding:75px 5vw 90px;background:#dff4e3}
 .product-end h2{font-size:clamp(34px,4vw,55px);letter-spacing:-.04em;margin:0 0 12px}
 .product-end p{color:#516b57;font-size:18px;margin-bottom:28px}
+@media(max-width:1050px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.product-grid{grid-template-columns:1fr;gap:20px}.products-toolbar{align-items:flex-start;flex-direction:column}.products-intro{padding:68px 7vw 52px}.product-details>p{min-height:0}}
 
 /* Refined catalog styling */

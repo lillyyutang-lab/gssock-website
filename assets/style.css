@@ -129,3 +129,27 @@ header .brand-logo img{position:absolute;width:440px;max-width:none;height:auto;
 /* Updated customization artwork, shown in full */
 #custom .visual{background:#b6dedc}
 #custom .visual::before{left:0;right:0;top:0;bottom:0;transform:none;aspect-ratio:auto;background:url("images/customization-art.webp") center/contain no-repeat}
+
+/* Illustrated four-step ordering journey */
+.process-journey{padding:88px 6vw 96px;background:#fff;text-align:center;color:#174b36}
+.journey-intro{font-size:clamp(20px,2.5vw,32px);margin:18px 0 8px;line-height:1.4}
+.process-journey h2{font-size:clamp(40px,4.5vw,64px);margin:0 0 55px}
+.journey-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;max-width:1320px;margin:auto;position:relative}
+.journey-card{min-width:0;position:relative;padding:26px 16px 30px}
+.journey-card:nth-child(odd){border:4px solid #75b589;border-bottom:0;border-radius:76px 76px 0 0}
+.journey-card:nth-child(even){border:4px solid #75b589;border-top:0;border-radius:0 0 76px 76px;margin-top:30px;padding-top:0}
+.journey-card:first-child::before,.journey-card:last-child::after{content:"";position:absolute;width:18px;height:18px;border:4px solid #75b589;border-radius:50%;background:#fff}
+.journey-card:first-child::before{left:-11px;bottom:38%}
+.journey-card:last-child::after{right:-11px;top:44px}
+.journey-label{height:80px;background:#174b36;color:#fff;border-radius:48px 48px 0 0;display:flex;align-items:center;justify-content:center;gap:12px}
+.journey-label span{font-size:clamp(24px,3vw,42px);font-weight:800;color:#c6e6cf}
+.journey-label strong{font-size:64px;line-height:1}
+.journey-body{padding:30px 10px 0;display:flex;flex-direction:column;align-items:center;min-height:355px}
+.journey-body h3{font-size:22px;line-height:1.2;margin:0 0 12px;min-height:53px;display:flex;align-items:center;justify-content:center}
+.journey-body p{font-size:15px;line-height:1.6;color:#597164;margin:0;min-height:96px}
+.journey-icon{width:116px;height:116px;margin:14px 0 28px;color:#246343}
+.journey-dots{display:flex;gap:12px;margin-top:auto}
+.journey-dots i{width:9px;height:9px;border:2px solid #246343;border-radius:50%}
+.journey-dots .active{background:#246343}
+@media(max-width:1000px){.journey-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 0}.journey-body{min-height:340px}}
+@media(max-width:600px){.process-journey{padding:65px 7vw}.journey-grid{grid-template-columns:1fr;gap:20px}.journey-card:nth-child(n){border:2px solid #75b589;border-radius:36px;margin:0;padding:14px}.journey-card::before,.journey-card::after{display:none}.journey-label{height:68px;border-radius:26px 26px 0 0}.journey-label span{font-size:30px}.journey-label strong{font-size:50px}.journey-body{min-height:0;padding:25px 14px 12px}.journey-body h3,.journey-body p{min-height:0}.journey-icon{margin:20px 0}.journey-dots{margin-top:5px}}

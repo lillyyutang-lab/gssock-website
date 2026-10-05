@@ -125,3 +125,7 @@ header .brand-logo img{position:absolute;width:440px;max-width:none;height:auto;
 #custom .visual{background:#fff}
 #custom .visual .palette,#custom .visual .big-sock{display:none}
 #custom .visual::before{content:"";position:absolute;left:4%;right:4%;top:50%;transform:translateY(-50%);aspect-ratio:1024/625;background:url("images/custom-sock-heights.webp") center top/100% auto no-repeat}
+
+/* Updated customization artwork, shown in full */
+#custom .visual{background:#b6dedc}
+#custom .visual::before{left:0;right:0;top:0;bottom:0;transform:none;aspect-ratio:auto;background:url("images/customization-art.webp") center/contain no-repeat}

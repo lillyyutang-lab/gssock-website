@@ -120,3 +120,8 @@ header .brand-logo{position:relative;display:block;flex:0 0 280px;width:280px;he
 header .brand-logo img{position:absolute;width:440px;max-width:none;height:auto;left:-88px;top:-28px;display:block}
 @media(min-width:901px) and (max-width:1100px){header{gap:18px;padding-inline:3vw}header nav{gap:18px;font-size:14px}}
 @media(max-width:900px){header .brand-logo{flex-basis:230px;width:230px;height:54px}header .brand-logo img{width:360px;height:auto;left:-72px;top:-23px}}
+
+/* Customization sock height photograph */
+#custom .visual{background:#fff}
+#custom .visual .palette,#custom .visual .big-sock{display:none}
+#custom .visual::before{content:"";position:absolute;left:4%;right:4%;top:50%;transform:translateY(-50%);aspect-ratio:1024/625;background:url("images/custom-sock-heights.webp") center top/100% auto no-repeat}

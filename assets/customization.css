@@ -2,3 +2,10 @@
 @media(max-width:1000px){.custom-hero{gap:30px}.custom-hero-art img{height:340px}.custom-height-grid{grid-template-columns:repeat(3,1fr)}.custom-package-grid{grid-template-columns:repeat(2,1fr)}.custom-jump a{flex-basis:30%}.custom-plan-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.custom-hero,.custom-split{grid-template-columns:1fr}.custom-hero{padding:55px 7vw}.custom-hero h1{font-size:54px}.custom-hero-art img{height:320px}.custom-section{padding:58px 7vw}.custom-option-grid,.custom-tech-grid{grid-template-columns:1fr}.custom-height-grid{grid-template-columns:repeat(2,1fr)}.custom-height-grid img{height:175px}.custom-heading{display:block}.custom-photo img{height:340px}.custom-jump{padding:0 4vw}.custom-jump a{flex-basis:45%;padding:15px 10px}.custom-stats{gap:15px}.custom-stats strong{font-size:15px}.custom-stats span{font-size:10px}.custom-fit-card{padding:28px}.custom-package-grid{gap:12px}.custom-package-grid article{padding:18px}.custom-package-grid h3{font-size:20px}.custom-materials{gap:16px}.custom-plan-grid{gap:22px}.custom-final{padding:60px 7vw}}
 @media(prefers-reduced-motion:reduce){.custom-option{transition:none}}
+
+/* A seamless product showcase: blend the white photo background into the mint hero. */
+.custom-hero-art{background:transparent;border:0;border-radius:0;overflow:visible;isolation:isolate}
+.custom-hero-art img{height:auto;aspect-ratio:1;object-fit:contain;padding:0;mix-blend-mode:multiply}
+.custom-art-caption{border-top:0;padding:20px 0 0;color:#526e59;font-style:italic}
+@media(max-width:1000px){.custom-hero-art img{height:auto}}
+@media(max-width:700px){.custom-hero-art{max-width:520px;width:100%;margin:0 auto}.custom-hero-art img{height:auto}.custom-art-caption{padding-top:14px}}

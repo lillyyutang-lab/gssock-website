@@ -1,0 +1,7 @@
+/* Align the About hero factory image with the start of the introduction. */
+.about-intro-grid > figure {
+  align-self: start;
+  justify-self: center;
+  width: min(100%, 560px);
+  margin-top: 0;
+}

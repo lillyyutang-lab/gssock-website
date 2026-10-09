@@ -3,7 +3,7 @@ menu?.addEventListener('click',()=>{const open=nav.style.display!=='flex';nav.st
 nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{if(window.matchMedia('(max-width:900px)').matches){nav.style.display='none';menu?.setAttribute('aria-expanded','false')}}));
 
 const quoteForm=document.querySelector('#quote-form');
-quoteForm?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(quoteForm);const body=[`Name / Company: ${data.get('name')}`,`Email: ${data.get('email')}`,`Estimated Quantity: ${data.get('quantity')}`,`Project Details: ${data.get('details')}`].join('\n');window.location.href=`mailto:lillyyutang@gmail.com?subject=${encodeURIComponent('GoodStartSocks custom socks quote request')}&body=${encodeURIComponent(body)}`;});
+quoteForm?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(quoteForm);const body=[`Name / Company: ${data.get('name')}`,`Email: ${data.get('email')}`,`Estimated Quantity: ${data.get('quantity')}`,`Project Details: ${data.get('details')}`].join('\n');window.location.href=`mailto:info@goodstartsocks.com?subject=${encodeURIComponent('GoodStartSocks custom socks quote request')}&body=${encodeURIComponent(body)}`;});
 
 document.querySelectorAll('a[href="/"]').forEach(link=>link.addEventListener('click',event=>{if(window.location.protocol==='file:'){event.preventDefault();window.location.href='index.html';}}));
 

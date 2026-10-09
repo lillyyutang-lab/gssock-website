@@ -7,6 +7,12 @@ quoteForm?.addEventListener('submit',event=>{event.preventDefault();const data=n
 
 document.querySelectorAll('a[href="/"]').forEach(link=>link.addEventListener('click',event=>{if(window.location.protocol==='file:'){event.preventDefault();window.location.href='index.html';}}));
 
+const headerContact=document.querySelector('header .btn.sm');
+if(headerContact){headerContact.textContent='Contact Us';headerContact.href='contact.html';}
+const contactButtonStyle=document.createElement('style');
+contactButtonStyle.textContent='header .btn.sm{background:#625cff}header .btn.sm:hover{background:#5149e6}';
+document.head.append(contactButtonStyle);
+
 const whatsappStyle=document.createElement('style');
 whatsappStyle.textContent='.whatsapp-float{position:fixed;right:28px;bottom:28px;z-index:50;display:flex;align-items:center;gap:10px;padding:10px 17px 10px 10px;border-radius:999px;background:#25d366;color:#fff;box-shadow:0 12px 28px #116d3830;font:800 14px/1.05 Inter,Arial,sans-serif;transition:transform .2s,box-shadow .2s}.whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 16px 34px #116d3845}.whatsapp-float__icon{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fff;color:#25d366;font-size:22px;line-height:1}.whatsapp-float__text{display:grid;gap:2px}.whatsapp-float__text small{font-size:11px;font-weight:700}@media(max-width:600px){.whatsapp-float{right:17px;bottom:17px;padding:9px}.whatsapp-float__text{display:none}.whatsapp-float__icon{width:42px;height:42px}}';
 document.head.append(whatsappStyle);

@@ -5,6 +5,9 @@ nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{if(w
 const quoteForm=document.querySelector('#quote-form');
 quoteForm?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(quoteForm);const body=[`Name / Company: ${data.get('name')}`,`Email: ${data.get('email')}`,`Estimated Quantity: ${data.get('quantity')}`,`Project Details: ${data.get('details')}`].join('\n');window.location.href=`mailto:info@goodstartsocks.com?subject=${encodeURIComponent('GoodStartSocks custom socks quote request')}&body=${encodeURIComponent(body)}`;});
 
+const contactForm=document.querySelector('#contact-form');
+contactForm?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(contactForm);const body=[`Name: ${data.get('name')}`,`Email: ${data.get('email')}`,`WhatsApp: ${data.get('whatsapp')||'Not provided'}`,`Sock Type: ${data.get('sockType')||'Not specified'}`,`Style / Height: ${data.get('style')||'Not specified'}`,`Quantity: ${data.get('quantity')}`,`Material Preference: ${data.get('material')||'Not specified'}`,`Logo / Pattern: ${data.get('logo')||'Not specified'}`,'',`Requirements:\n${data.get('requirements')}`].join('\n');window.location.href=`mailto:info@goodstartsocks.com?subject=${encodeURIComponent('GoodStartSocks custom sock inquiry')}&body=${encodeURIComponent(body)}`;});
+
 document.querySelectorAll('a[href="/"]').forEach(link=>link.addEventListener('click',event=>{if(window.location.protocol==='file:'){event.preventDefault();window.location.href='index.html';}}));
 
 const headerContact=document.querySelector('header .btn.sm');

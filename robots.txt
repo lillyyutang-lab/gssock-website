@@ -1,3 +1,30 @@
 User-agent: *
 Allow: /
+
+# Explicit access for AI search and answer services. Content remains public
+# and the canonical sitemap below is the source of crawlable pages.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://www.goodstartsocks.com/sitemap.xml
